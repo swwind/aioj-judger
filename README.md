@@ -97,4 +97,14 @@ Then, main judger should validate the player's operation and check if somebody w
 - If the game matched some conditions, judger can assert the game and return the result(draw, win or lose).
 - Otherwise, the game will be continued to the next player.
 
+For bots, inputs are given as following:
+
+- first line: your bot id (number)
+- second line: initial game state (output from judger)
+- next lines:
+  - first number: operation bot id, if this is your id, then it is your turn.
+  - second and next numbers(if this is not your turn): player operation(output from other bots)
+
+You can see `example` for more infomations.
+
 
